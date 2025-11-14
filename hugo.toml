@@ -1,0 +1,74 @@
+baseURL = "https://hashisato.github.io/portfolio/"
+title = "hashisato"
+theme = "hugo-coder"
+languageCode = "en"
+defaultContentLanguage = "en"
+enableEmoji = true
+
+[pagination]
+pagerSize = 6
+
+[markup]
+[markup.highlight]
+noClasses = false
+[markup.goldmark]
+[markup.goldmark.renderer]
+unsafe = true
+
+[params]
+author = "hashisato"
+description = "Personal site"
+avatarURL = "images/avatar.jpg"
+dateFormat = "January 2, 2006"
+since = 2025
+colorScheme = "auto"
+hideColorSchemeToggle = false
+
+[taxonomies]
+category = "categories"
+series = "series"
+tag = "tags"
+author = "authors"
+
+[[params.social]]
+name = "Github"
+icon = "fa-brands fa-github fa-2x"
+weight = 1
+url = "https://github.com/hashisato"
+
+[[params.social]]
+name = "Twitter"
+icon = "fa-brands fa-x-twitter fa-2x"
+weight = 2
+url = "https://x.com/hashisato_"
+
+[[params.social]]
+name = "RSS"
+icon = "fa-solid fa-rss fa-2x"
+weight = 6
+url = "https://hashisato.github.io/portfolio/index.xml"
+rel = "alternate"
+type = "application/rss+xml"
+
+[languages.en]
+languageName = "English"
+
+[[languages.en.menu.main]]
+name = "About"
+weight = 1
+url = "about/"
+
+[[languages.en.menu.main]]
+name = "Post"
+weight = 2
+url = "post/"
+
+[[languages.en.menu.main]]
+name = "Project"
+weight = 3
+url = "project/"
+
+[[languages.en.menu.main]]
+name = "Contact me"
+weight = 5
+url = "contact/"
